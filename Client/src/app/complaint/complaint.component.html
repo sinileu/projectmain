@@ -1,0 +1,18 @@
+
+<h1>welcome</h1>
+<div class="row" id="" *ngFor="let complaint of complaint">    
+    <br>
+    
+    <div class="col-md-10 col-sm-9">
+      <h3>{{complaint.complaint}}</h3> 
+      <div class="row">       
+        <div class="col-xs-9">
+          <h4><span class="label label-default"></span>{{complaint.category}}</h4>
+          <h4>
+          <small style="font-family:courier,'new courier'; color: black;">{{complaint.name}}•
+            <button class="btn btn-dark" style="color: white;" (click)="listcomplaint(complaint)">Show</button></small>
+          </h4>
+        </div>
+      </div>
+    </div>
+</div>
